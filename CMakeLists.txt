@@ -15,6 +15,7 @@ target_include_directories(
 
 
 add_executable(sdl_playground)
+target_compile_features(sdl_playground PRIVATE c_std_11)
 target_include_directories(sdl_playground PRIVATE src)
 target_link_libraries(sdl_playground PRIVATE sdl2_interface)
 target_sources(
